@@ -1,0 +1,14 @@
+research_task:
+  description: >
+    Research and gather detailed insights about the topic {topic}.
+  expected_output: >
+    A structured research summary with data and references.
+  agent: researcher_agent
+
+creative_task:
+  description: >
+    Write a short creative and engaging blog summary based on the research and topic {topic} as of 2025.
+  expected_output: >
+    A creative and engaging blog summary.
+  agent: writer_agent
+  context: [research_task]
